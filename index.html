@@ -7,14 +7,35 @@
     <title>UFO</title>
 </head>
 <body>
-   <main style="background-color: blueviolet; width: 50%; margin-left: 25%; margin-top: 5%;">
-    <div>
-    <h1><b>404 tekstuks</b></h1> <br>
-    <p>Page not found tekstuks</p> <br>
-    <a href="https://www.example.com">Go to our homepage</a>
+   <main style="background-color: blueviolet; width: 60
+   %; margin-left: 25%; margin-top: 5%; display: inline-block;">
+    <div style="background-color: bisque; width: 30%; float:left">
+     <h1 style="font-size: 75px; font-weight: 850; font-style: italic; color: rgba(0, 0, 255, 0.158);">4nul4</h1> 
+     <p style="font-size: 25px; text-transform: uppercase; color: gray;"> Page not found</p> 
+     <a href="https://www.example.com">Go to our homepage</a>
     </div>
-    <img src="./pics/only_ufo_jpeg.jpg" alt="picture is also 404">
+    <img style="width: 60%; float:right; "src="./pics/only_ufo_jpeg.jpg" alt="picture is also 404">
    </main>
 
 </body>
 </html>
+
+<!--
+Elementu atvaizdavimo budai (style="..."):
+display: block;     elementai krenta stulepeliu - dazniausia reiksme (<body>, <div>, <p>)
+display: inline;    elementai krenta eilute, ir uzsilenkia i kita eilute, jei netiko vienoje - retesne reiksme (<a>)
+display: inline-block;      elementai krenta eilute, bet jei bent dalis netelpa, visas krenta i nauja eilute, ir niekad nebuna platesnis uz parent element - retesne reiksme
+display: none;  elementai nerodomi - retesne reiksme (<head>, <meta>)
+
+Proverstinis elementu nustumumias (horizontaliai) nurodyta kryptimi
+float: left;
+float: right;
+-> bet tada parent turi gauti inline-block
+
+standartinis budas kurti universalia struktura:
+((ATSIMINTI))
+display: inline-block;
+width: 100%;
+float: left;
+
+-->
